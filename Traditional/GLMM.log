@@ -1,0 +1,17 @@
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                      y   No. Observations:                  106
+Model:                            GLM   Df Residuals:                      104
+Model Family:                 Poisson   Df Model:                            1
+Link Function:                    log   Scale:                             1.0
+Method:                          IRLS   Log-Likelihood:                -383.70
+Date:                Tue, 28 Aug 2018   Deviance:                       493.17
+Time:                        10:50:58   Pearson chi2:                     755.
+No. Iterations:                     8                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+const          0.8756      0.111      7.895      0.000         0.658     1.093
+x1             0.0085      0.002      5.136      0.000         0.005     0.012
+==============================================================================
+#############

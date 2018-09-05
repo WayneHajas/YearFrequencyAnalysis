@@ -1,0 +1,52 @@
+
+Call:
+glm(formula = af ~ yb, family = poisson, data = data)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.3665  -1.9121  -1.2032   0.2343   9.8103  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  1.806576   0.119219  15.153   <2e-16 ***
+yb          -0.008000   0.004057  -1.972   0.0486 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 313.51  on 52  degrees of freedom
+Residual deviance: 309.60  on 51  degrees of freedom
+AIC: 466.28
+
+Number of Fisher Scoring iterations: 6
+
+##############Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: af ~ yb + (1 | yb)
+   Data: data
+
+     AIC      BIC   logLik deviance df.resid 
+   281.3    287.2   -137.6    275.3       50 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-1.15166 -0.41160 -0.06496  0.22538  0.54558 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ yb     (Intercept) 0.8432   0.9183  
+Number of obs: 53, groups:  yb, 53
+
+Fixed effects:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  1.54641    0.30605   5.053 4.35e-07 ***
+yb          -0.01618    0.01025  -1.579    0.114    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+   (Intr)
+yb -0.859
+##############
